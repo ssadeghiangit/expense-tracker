@@ -8,10 +8,10 @@ const transactions = [
   { id: 7, date: '1404/06/04', description: 'شارژ ایرانسل', amount: 55000, type: 'expense' },
   { id: 8, date: '1404/06/01', description: 'کادو تولد', amount: 5000000, type: 'income' },
   { id: 9, date: '1404/05/25', description: 'دندان‌پزشکی', amount: 9800000, type: 'expense' },
-  { id: 10, date: '1404/05/20', description: 'غذا', amount: 55000, type: 'expense' },
-  { id: 11, date: '1404/05/17', description: 'سوپرمارکت ', amount: 55000, type: 'expense' },
-  { id: 12, date: '1404/05/17', description: 'غذا', amount: 55000, type: 'expense' },
-  { id: 13, date: '1404/05/16', description: 'قسط سوم پروژه کاریار', amount: 55000, type: 'income' }
+  { id: 10, date: '1404/05/20', description: 'غذا', amount: 250000, type: 'expense' },
+  { id: 11, date: '1404/05/17', description: 'سوپرمارکت', amount: 758000, type: 'expense' },
+  { id: 12, date: '1404/05/17', description: 'غذا', amount: 110000, type: 'expense' },
+  { id: 13, date: '1404/05/16', description: 'قسط سوم پروژه کاریار', amount: 3100000, type: 'income' }
 ]
 
 export default transactions
