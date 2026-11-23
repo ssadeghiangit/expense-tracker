@@ -9,7 +9,7 @@ function App() {
       <p>مدیریت درآمد و هزینه‌ها</p>
 
       <TransactionTable
-       title="لیست تراکنش‌ها"
+       title="تراکنش‌ها"
        transactions={transactions}
      />
     </main>
