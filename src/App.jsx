@@ -5,13 +5,10 @@ import './App.css'
 function App() {
   return (
     <main className="app-container">
-      <h1>جیب‌تو</h1>
-      <p>مدیریت درآمد و هزینه‌ها</p>
-
       <TransactionTable
-       title="تراکنش‌ها"
-       transactions={transactions}
-     />
+        title="تراکنش‌ها"
+        transactions={transactions}
+      />
     </main>
   )
 }

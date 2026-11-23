@@ -72,7 +72,7 @@ function TransactionTable({ title, transactions }) {
   ))}
 </div>
 
-      <p>تعداد تراکنش‌ها: {transactions.length}</p>
+      
     </div>
   )
 }

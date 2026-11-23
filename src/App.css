@@ -1,8 +1,11 @@
 .app-container {
-  width: 100%;
-  max-width: 816px;
+  width: calc(100% - 32px);
+  max-width: 768px;
+  min-height: 803px;
   margin: 0 auto;
-  padding: 32px;
+  padding: 36px 24px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
 }
 
 table {
@@ -14,11 +17,11 @@ table {
 
 th:nth-child(-n + 3),
 td:nth-child(-n + 3) {
-  width: 20%;
+  width: 22.222%;
 }
 th:nth-child(4),
 td:nth-child(4) {
-  width: 40%;
+  width: 33.333%;
 }
 
 .table-title {
@@ -39,7 +42,7 @@ th {
   vertical-align: middle;
   color: #6B7580;
   border-bottom: 1px solid #A0CCF8;
-} 
+}
 
 th,
 td {
@@ -50,6 +53,9 @@ td {
 }
 
 td {
+  padding: 14px 16px;
+  height: 48px;
+  vertical-align: middle;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -72,6 +78,9 @@ td {
 .mobile-transactions {
   display: none;
 }
+.desktop-table td:first-child {
+  font-weight: 500;
+}
 
 @media (max-width: 600px) {
   .desktop-table {
@@ -79,10 +88,11 @@ td {
   }
 
   .mobile-transactions {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
   .transaction-card {
   width: 100%;
   height: 78px;
@@ -111,6 +121,16 @@ td {
 
 .transaction-card .expense {
   color: #EF4E4E;
+}
+.transaction-card-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #242D35;
+}
+.app-container {
+  min-height: 875px;
+  padding: 36px 24px;
 }
 
 }
