@@ -1,0 +1,132 @@
+.transaction-table table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  text-align: right;
+}
+
+.transaction-table th:nth-child(-n + 3),
+.transaction-table td:nth-child(-n + 3) {
+  width: 22.222%;
+}
+
+.transaction-table th:nth-child(4),
+.transaction-table td:nth-child(4) {
+  width: 33.333%;
+}
+
+.transaction-table .table-title {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 31px;
+  color: #242d35;
+}
+
+.transaction-table th {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 16px;
+  height: 52px;
+  vertical-align: middle;
+  color: #6b7580;
+  border-bottom: 1px solid #a0ccf8;
+}
+
+.transaction-table td {
+  padding: 14px 16px;
+  height: 48px;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #242d35;
+}
+
+.transaction-table .income {
+  color: #3ebd93;
+}
+
+.transaction-table .expense {
+  color: #ef4e4e;
+}
+
+.transaction-table .income,
+.transaction-table .expense {
+  font-weight: 500;
+}
+
+.transaction-table .desktop-table td:first-child {
+  font-weight: 500;
+}
+
+.transaction-table .mobile-transactions {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .transaction-table .desktop-table {
+    display: none;
+  }
+
+  .transaction-table .mobile-transactions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .transaction-table .transaction-card {
+    width: 100%;
+    height: 78px;
+    padding: 14px 16px;
+    background-color: #fafafb;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .transaction-table .transaction-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .transaction-table .transaction-card-top > span:first-child,
+  .transaction-table .transaction-card-amount {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  .transaction-table .transaction-card-top > span:first-child {
+    color: #242d35;
+  }
+
+  .transaction-table .transaction-card-amount {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    direction: rtl;
+    white-space: nowrap;
+  }
+
+  .transaction-table .transaction-card .income {
+    color: #3ebd93;
+  }
+
+  .transaction-table .transaction-card .expense {
+    color: #ef4e4e;
+  }
+
+  .transaction-table .transaction-card-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #242d35;
+  }
+}

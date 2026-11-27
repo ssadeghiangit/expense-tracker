@@ -1,16 +1,11 @@
 import TransactionTable from './components/TransactionTable'
 import transactions from './data/transactions'
+import './App.css'
 
 function App() {
   return (
-    <main>
-      <h1>جیب‌تو</h1>
-      <p>مدیریت درآمد و هزینه‌ها</p>
-
-      <TransactionTable
-       title="لیست تراکنش‌ها"
-       transactions={transactions}
-     />
+    <main className="app-container">
+      <TransactionTable title="تراکنش‌ها" transactions={transactions} />
     </main>
   )
 }
