@@ -3,8 +3,7 @@
 }
 @font-face {
   font-family: 'Vazirmatn';
-  src: url('./assets/fonts/Vazirmatn-VariableFont_wght.ttf')
-    format('truetype');
+  src: url('./assets/fonts/Vazirmatn-VariableFont_wght.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -15,7 +14,7 @@ body {
   direction: rtl;
   text-align: right;
   font-family: 'Vazirmatn', sans-serif;
-  background-color: #DCDFE3;
+  background-color: #dcdfe3;
 }
 
 #root {

@@ -5,10 +5,7 @@ import './App.css'
 function App() {
   return (
     <main className="app-container">
-      <TransactionTable
-        title="تراکنش‌ها"
-        transactions={transactions}
-      />
+      <TransactionTable title="تراکنش‌ها" transactions={transactions} />
     </main>
   )
 }

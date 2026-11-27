@@ -21,7 +21,7 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 31px;
-  color: #242D35;
+  color: #242d35;
 }
 
 .transaction-table th {
@@ -31,8 +31,8 @@
   padding: 16px;
   height: 52px;
   vertical-align: middle;
-  color: #6B7580;
-  border-bottom: 1px solid #A0CCF8;
+  color: #6b7580;
+  border-bottom: 1px solid #a0ccf8;
 }
 
 .transaction-table td {
@@ -42,15 +42,15 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  color: #242D35;
+  color: #242d35;
 }
 
 .transaction-table .income {
-  color: #3EBD93;
+  color: #3ebd93;
 }
 
 .transaction-table .expense {
-  color: #EF4E4E;
+  color: #ef4e4e;
 }
 
 .transaction-table .income,
@@ -82,7 +82,7 @@
     width: 100%;
     height: 78px;
     padding: 14px 16px;
-    background-color: #FAFAFB;
+    background-color: #fafafb;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -96,25 +96,37 @@
     width: 100%;
   }
 
-  .transaction-table .transaction-card-top span {
+  .transaction-table .transaction-card-top > span:first-child,
+  .transaction-table .transaction-card-amount {
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
-    color: #242D35;
+  }
+
+  .transaction-table .transaction-card-top > span:first-child {
+    color: #242d35;
+  }
+
+  .transaction-table .transaction-card-amount {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    direction: rtl;
+    white-space: nowrap;
   }
 
   .transaction-table .transaction-card .income {
-    color: #3EBD93;
+    color: #3ebd93;
   }
 
   .transaction-table .transaction-card .expense {
-    color: #EF4E4E;
+    color: #ef4e4e;
   }
 
   .transaction-table .transaction-card-description {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    color: #242D35;
+    color: #242d35;
   }
 }

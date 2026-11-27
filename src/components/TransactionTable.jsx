@@ -30,9 +30,7 @@ function TransactionTable({ title, transactions }) {
 
                 <td className="income">
                   {transaction.type === 'income' ? (
-                    <span dir="ltr">
-                      +{formatAmount(transaction.amount)}
-                    </span>
+                    <span dir="ltr">+{formatAmount(transaction.amount)}</span>
                   ) : (
                     '-'
                   )}
@@ -40,9 +38,7 @@ function TransactionTable({ title, transactions }) {
 
                 <td className="expense">
                   {transaction.type === 'expense' ? (
-                    <span dir="ltr">
-                      -{formatAmount(transaction.amount)}
-                    </span>
+                    <span dir="ltr">-{formatAmount(transaction.amount)}</span>
                   ) : (
                     '-'
                   )}
@@ -57,13 +53,15 @@ function TransactionTable({ title, transactions }) {
       <div className="mobile-transactions">
         {transactions.map((transaction) => (
           <div className="transaction-card" key={transaction.id}>
-
             <div className="transaction-card-top">
               <span>{formatDate(transaction.date)}</span>
 
-              <span dir="ltr" className={transaction.type}>
-                {transaction.type === 'income' ? '+' : '-'}
-                {formatAmount(transaction.amount)} تومان
+              <span className={`transaction-card-amount ${transaction.type}`}>
+                <span dir="ltr">
+                  {transaction.type === 'income' ? '+' : '-'}
+                  {formatAmount(transaction.amount)}
+                </span>
+                <span>تومان</span>
               </span>
             </div>
 
@@ -73,7 +71,6 @@ function TransactionTable({ title, transactions }) {
           </div>
         ))}
       </div>
-
     </div>
   )
 }
